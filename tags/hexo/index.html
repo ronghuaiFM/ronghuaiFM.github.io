@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>RongHuai web dedeveloper</title>
+  <title>Tag: hexo | RongHuai web dedeveloper</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="个人技术博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="RongHuai web dedeveloper">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
 <meta property="og:site_name" content="RongHuai web dedeveloper">
 <meta property="og:description" content="个人技术博客">
 <meta property="og:locale" content="default">
@@ -155,118 +155,34 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-rhtext01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/07/18/rhtext01/" class="archive-article-date">
+  	<time datetime="2018-07-18T06:14:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/18/rhtext01/">使用hexo+yilia+github搭建个人博客</a>
+      <a class="archive-article-title" href="/2018/07/18/rhtext01/">使用hexo+yilia+github搭建个人博客</a>
     </h1>
   
 
-        
-        <a href="/2018/07/18/rhtext01/" class="archive-article-date">
-  	<time datetime="2018-07-18T06:14:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h6 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a><em>写在前面：</em></h6><blockquote>
-<p>百度查了很多资料，终于了出来。现在记录下来，免得自己忘记了。基于win7上搭建个人博客。</p>
-</blockquote>
-<h4 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h4><p><a href="#1">1. 搭建环境</a><br><a href="#2">2. 安装hexo</a><br><a href="#3">3. 选择主题</a><br><a href="#4">4. 部署本地文件到github</a><br><a href="#5">5. 开启博客</a></p>
-<hr>
-<p><a name="1">1.搭建环境</a></p>
-<ul>
-<li>1.1 安装git <a href="https://git-scm.com/" target="_blank" rel="noopener">git官网</a> </li>
-<li>1.2 安装node.js <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node.js官网</a><br><em>此处node版本要确保大于6.2</em></li>
-</ul>
-<hr>
-<p><a name="2">2.安装hexo</a></p>
-<ul>
-<li>2.1首先全局安装hexo,打开cmd输入以下命令</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
-<ul>
-<li>2.2在电脑上新建一个文件夹如hexo，然后在文件夹里面初始化hexo，cmd依次执行以下命令</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install (用于下载依赖包)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>2.3安装完成后生成静态文件、启动服务器本地进行测试，测试地址 :<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate (快捷键:hexo g,生成静态文件)</span><br><span class="line">hexo server   (快捷键:hexo s,启动服务器,本地可以测试)</span><br></pre></td></tr></table></figure>
-<hr>
-<p><a name="3">3.选择主题</a></p>
-<ul>
-<li><p>3.1hexo默认主题是landscape，主题可以去github社区去查找。现展示github star数量最多的前10个主题。ps~排名第一的文件很大很难下载，我选用yilia主题，这个主题比较清晰，现列出yilia和icarus更换流程<img src="http://xxb.xuexunbao.com.cn/20180719023658866fb5c81ed3a220004b71069645f112867.png" alt="star"></p>
-</li>
-<li><p>3.2下载主题yilia</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
-<ul>
-<li>3.3下载完成后themes文件下会出现一个yilia文件夹(cd themes查看)，返回主目录（cd..),用sublime或者VScode任意编译器打开_config.yml文件。找到主题theme将默认landscape主题更改成yilia</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: yilia  (默认是landscape)</span><br><span class="line"></span><br><span class="line"># Deployment</span><br></pre></td></tr></table></figure>
-<ul>
-<li>3.4重新编译，启动服务器，主题如下图</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean (清除当前项目的静态文件)</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p><img src="http://xxb.xuexunbao.com.cn/2018071902385082109dd8c2662b96ce14928333f055c5580.png" alt="yilia主题"></p>
-<ul>
-<li>3.5变更icarus主题 步骤同yilia主题，不过要注意的是themes/icarus文件夹中_config.yml.example文件要重命名为_config.yml</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: icarus  (变更主题为icarus)</span><br><span class="line"></span><br><span class="line"># Deployment</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean (清除当前项目的静态文件)</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p><img src="http://xxb.xuexunbao.com.cn/201807190240150928266e4bfeda1bd42d8f9794eb4ea0a13.png" alt="icarus主题"></p>
-<hr>
-<p><a name="4">4.部署本地文件到github</a></p>
-<ul>
-<li>4.1注册github账号<a href="https://github.com//" target="_blank" rel="noopener">github官网</a></li>
-<li>4.2新建仓库，进入个人主页，New repository，Repository name(仓库名字)： ronghuaifm.github.io(格式必须严格仓库名字.github.io)，最后点击Create repository创建</li>
-<li>4.3编辑主目录的文件_config.yml,找到deploy,添加代码github地址为新建仓库的ssh地址</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">      github: git@github.com:tengj/tengj.github.io.git,master</span><br></pre></td></tr></table></figure>
-<ul>
-<li>4.4初始ssh keys，执行以下命令</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxx@163.com&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>4.5配置ssh keys，打开C:\Users\Administrator.ssh 有三个文件，打开id_rsa.pub复制内容到github上的ssh keys中<br><a name="5">5.开启博客</a></li>
-<li>5.1依次执行命令</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d (完整命令为hexo deploy,将本地编译好的静态文件发布到github上)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>5.2新建博客，在Git Bash以下命令，在\hexo\source_posts\rhtext01.md会生成一个rhtext01.md文件，hexo文章是写在markdown文件中，markdown语法比较简单，百度一下。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;rhtext01&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>5.3编辑文章，上传。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<hr>
-<p><strong><em>常见错误：</em></strong>    </p>
-<ul>
-<li style="list-style: none"><input type="checkbox" checked> 1.git not found <img src="http://xxb.xuexunbao.com.cn/201807190235580154a47a0db6e60853dedfcfdf08a5ca249.png" alt="git"><br><strong>==解决办法==</strong>：安装hexo-deployer-git这个模块</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<ul>
-<li style="list-style: none"><input type="checkbox" checked> 2.缺少模块，如图解决<img src="http://xxb.xuexunbao.com.cn/2018071902380192010fb15c77258a991b0028080a64fb42d.png" alt="缺少模块"></li>
-</ul>
-<hr>
-<h5 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h5><h6 id="1-hexo常用的几个命令"><a href="#1-hexo常用的几个命令" class="headerlink" title="1.hexo常用的几个命令"></a>1.hexo常用的几个命令</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo g (完整命令为hexo generate,生成静态文件)</span><br><span class="line">hexo s (完整命令为hexo server,启动服务器,本地可以测试)</span><br><span class="line">hexo d (完整命令为hexo deploy,将本地编译好的静态文件发布到github上)</span><br><span class="line">hexo n (完整命令为hexo new,新建一篇文章)</span><br><span class="line">hexo clean (清除当前项目的静态文件)</span><br></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -278,41 +194,19 @@
 		</ul>
 	</div>
 
-      
+          
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/18/rhtext01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -334,10 +228,10 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
